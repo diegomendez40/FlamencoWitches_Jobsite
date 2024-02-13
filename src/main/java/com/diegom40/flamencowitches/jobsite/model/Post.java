@@ -9,7 +9,7 @@ public class Post {
     private String profile;
     private String description;
     private int exp;
-    private String techs[];
+    private String[] spells;
 
     public Post() {
     }
@@ -38,12 +38,12 @@ public class Post {
         this.exp = exp;
     }
 
-    public String[] getTechs() {
-        return techs;
+    public String[] getSpells() {
+        return spells;
     }
 
-    public void setTechs(String[] techs) {
-        this.techs = techs;
+    public void setSpells(String[] spells) {
+        this.spells = spells;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Post {
                 "profile='" + profile + '\'' +
                 ", description='" + description + '\'' +
                 ", exp=" + exp +
-                ", techs=" + Arrays.toString(techs) +
+                ", spells=" + Arrays.toString(spells) +
                 '}';
     }
 }
